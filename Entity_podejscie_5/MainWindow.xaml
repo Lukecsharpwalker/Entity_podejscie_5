@@ -1,0 +1,111 @@
+﻿<Window x:Class="Entity_podejscie_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entity_podejscie_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="356.176" Width="1034.559">
+    <Grid Margin="0,0,-267,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="850*"/>
+            <ColumnDefinition Width="181*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dgUbrania"  HorizontalAlignment="Left" Height="196" Margin="188,58,0,0" VerticalAlignment="Top" Width="478" RenderTransformOrigin="0.5,0.5" Loaded="dgUbrania_Loaded">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.132"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+        <TextBox x:Name="MARKA_TXT" HorizontalAlignment="Left" Height="23" Margin="855,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="OPIS_TXT" HorizontalAlignment="Left" Height="23" Margin="855,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CENA_TXT" HorizontalAlignment="Left" Height="23" Margin="855,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label HorizontalAlignment="Left" Margin="751,202,0,0" VerticalAlignment="Top" Height="108" Width="17">
+            <Label Content="Label" Height="98" Width="7"/>
+        </Label>
+        <Label Content="TYP" HorizontalAlignment="Left" Height="23" Margin="705,41,0,0" VerticalAlignment="Top" Width="63"/>
+        <Label Content="KOLOR" HorizontalAlignment="Left" Height="23" Margin="705,87,0,0" VerticalAlignment="Top" Width="63"/>
+        <Label Content="ROZMIAR" HorizontalAlignment="Left" Height="23" Margin="705,128,0,0" VerticalAlignment="Top" Width="63"/>
+        <Label Content="MARKA" HorizontalAlignment="Left" Height="23" Margin="705,167,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="OPIS" HorizontalAlignment="Left" Height="27" Margin="705,202,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="12" Margin="717,287,0,0" VerticalAlignment="Top" Width="0"/>
+        <Label Content="CENA" HorizontalAlignment="Left" Height="32" Margin="705,255,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="Insert" Content="INSERT" HorizontalAlignment="Left" Margin="189,279,0,0" VerticalAlignment="Top" Width="75" Click="Insert_Click"/>
+        <ComboBox x:Name="TYP_COMBO" HorizontalAlignment="Left" Margin="855,41,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TYP_COMBO_SelectionChanged" IsEditable="True">
+            <ComboBoxItem Content="Buty"/>
+            <ComboBoxItem Content="Biżuteria"/>
+            <ComboBoxItem Content="Bluzki z długim rekawem"/>
+            <ComboBoxItem Content="Dodatki"/>
+            <ComboBoxItem Content="Koszule"/>
+            <ComboBoxItem Content="Kurtki"/>
+            <ComboBoxItem Content="Marynarki"/>
+            <ComboBoxItem Content="Nakrycia głowy"/>
+            <ComboBoxItem Content="Okulary"/>
+            <ComboBoxItem Content="Płaszcze"/>
+            <ComboBoxItem Content="Spodnie"/>
+            <ComboBoxItem Content="Spódniczki"/>
+            <ComboBoxItem Content="Sukienki"/>
+            <ComboBoxItem Content="Swetry"/>
+            <ComboBoxItem Content="T-Shirt"/>
+            <ComboBoxItem Content="Zegarki"/>
+            <ComboBoxItem/>
+            <ComboBoxItem/>
+            <ComboBoxItem/>
+            <ComboBoxItem/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <ComboBox x:Name="Kolor_Combo" HorizontalAlignment="Left" Margin="855,88,0,0" VerticalAlignment="Top" Width="120" IsEditable="True">
+            <ComboBoxItem Content="biały"/>
+            <ComboBoxItem Content="bordowy"/>
+            <ComboBoxItem Content="brązowy"/>
+            <ComboBoxItem Content="cielisty"/>
+            <ComboBoxItem Content="czarny"/>
+            <ComboBoxItem Content="czerwony"/>
+            <ComboBoxItem Content="écru"/>
+            <ComboBoxItem Content="fioletowy"/>
+            <ComboBoxItem Content="grafitowy"/>
+            <ComboBoxItem Content="granatowy"/>
+            <ComboBoxItem Content="khaki"/>
+            <ComboBoxItem Content="kremowy"/>
+            <ComboBoxItem Content="lawendowy"/>
+            <ComboBoxItem Content="limonkowy"/>
+            <ComboBoxItem Content="niebieski"/>
+            <ComboBoxItem Content="oliwkowy"/>
+            <ComboBoxItem Content="pomarańczowy"/>
+            <ComboBoxItem Content="purpurowy"/>
+            <ComboBoxItem Content="różowy"/>
+            <ComboBoxItem Content="siwy "/>
+            <ComboBoxItem Content="srebrny"/>
+            <ComboBoxItem Content="szary"/>
+            <ComboBoxItem Content="turkusowy"/>
+            <ComboBoxItem Content="zielony"/>
+            <ComboBoxItem Content="złoty"/>
+            <ComboBoxItem Content="żółty"/>
+        </ComboBox>
+        <ComboBox x:Name="rozmiar_combo" HorizontalAlignment="Left" Margin="855,128,0,0" VerticalAlignment="Top" Width="120" IsEditable="True">
+            <ComboBoxItem Content="xs"/>
+            <ComboBoxItem Content="s"/>
+            <ComboBoxItem Content="m"/>
+            <ComboBoxItem Content="l"/>
+            <ComboBoxItem Content="xl"/>
+            <ComboBoxItem Content="xxl"/>
+            <ComboBoxItem Content="34"/>
+            <ComboBoxItem Content="36"/>
+            <ComboBoxItem Content="38"/>
+            <ComboBoxItem Content="40"/>
+            <ComboBoxItem Content="42"/>
+            <ComboBoxItem Content="44"/>
+            <ComboBoxItem Content="46"/>
+            <ComboBoxItem Content="48"/>
+            <ComboBoxItem Content="OverSize"/>
+            <ComboBoxItem Content="Inny"/>
+        </ComboBox>
+        <Button x:Name="DELETE" Content="DELETE" HorizontalAlignment="Left" Margin="310,279,0,0" VerticalAlignment="Top" Width="75" Click="DELETE_Click"/>
+
+    </Grid>
+</Window>
