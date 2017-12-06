@@ -70,6 +70,7 @@ namespace Entity_podejscie_5
                 System.Windows.MessageBox.Show("Witam szanownie");
             }
 
+
         }
 
    /*    private void Window_Loaded(object sender, RoutedEventArgs e)
